@@ -1,0 +1,269 @@
+<!-- HTML header for doxygen 1.9.8-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>电控组文档: 开发环境配置</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">电控组文档<span id="projectnumber">&#160;v1.0.0</span>
+   </div>
+   <div id="projectbrief">鸿雁战队RoboMaster</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('getting_started.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">开发环境配置</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="toc"><h3>目录</h3>
+<ul><li class="level1"><a href="#autotoc_md42">VSCode配置</a><ul><li class="level2"><a href="#autotoc_md43">IDE代码分析&amp;高亮</a></li>
+<li class="level2"><a href="#autotoc_md44">调试</a></li>
+</ul>
+</li>
+<li class="level1"><a href="#autotoc_md45">Clion配置</a></li>
+<li class="level1"><a href="#autotoc_md46">一些说明</a><ul><li class="level2"><a href="#autotoc_md47">MINGW</a></li>
+<li class="level2"><a href="#autotoc_md48">多编译器选择</a><ul><li class="level3"><a href="#autotoc_md49">问题</a></li>
+<li class="level3"><a href="#autotoc_md50">可能的解决方案</a></li>
+</ul>
+</li>
+<li class="level2"><a href="#autotoc_md51">ST调试时检测芯片是否正版</a></li>
+</ul>
+</li>
+<li class="level1"><a href="#autotoc_md52">Doxygen文档配置</a><ul><li class="level2"><a href="#autotoc_md53">文档格式及语法</a></li>
+<li class="level2"><a href="#autotoc_md54">CMake配置</a></li>
+<li class="level2"><a href="#autotoc_md55">细节</a><ul><li class="level3"><a href="#autotoc_md56">主题插件</a></li>
+<li class="level3"><a href="#autotoc_md57">版本问题</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="textblock"><p>使用的工具有CMake，Make，gcc-arm-none-eabi，openocd，doxygen，MINGW，其中doxygen请用1.9.8版本 <br  />
+ 请将安装好的工具添加到系统环境变量内。</p>
+<h1><a class="anchor" id="autotoc_md42"></a>
+VSCode配置</h1>
+<p>使用队库项目模板+STM32CubeMX生成，请照下图选择 <img src="image/2023-10-23-22-55-34.png" alt="" class="inline"/> <img src="image/2023-10-23-22-55-06.png" alt="" class="inline"/> 生成后的Makefile和xxxx_FLASH.ld移入<code>CMake</code>路径 <br  />
+ 推荐使用CMake插件 <br  />
+ <img src="image/2023-10-23-23-10-50.png" alt="" class="inline"/> <br  />
+ CMake编译器设置为<code>未指定</code> <br  />
+ <img src="image/2023-10-23-23-12-09.png" alt="" class="inline"/> <br  />
+ <img src="image/2023-10-23-23-11-36.png" alt="" class="inline"/> <br  />
+ 插件自动选择在build路径下编译，也可自行设置 <br  />
+ 插件可选择生成目标，可选择编译执行文件还是文档</p>
+<h2><a class="anchor" id="autotoc_md43"></a>
+IDE代码分析&amp;高亮</h2>
+<p>todo: 配置vscode的clang</p>
+<h2><a class="anchor" id="autotoc_md44"></a>
+调试</h2>
+<p>todo: cortex-debug+openocd <br  />
+ <a href="https://zhuanlan.zhihu.com/p/72549457">https://zhuanlan.zhihu.com/p/72549457</a></p>
+<h1><a class="anchor" id="autotoc_md45"></a>
+Clion配置</h1>
+<p>参考稚晖君知乎<a href="https://zhuanlan.zhihu.com/p/145801160">文章</a></p>
+<h1><a class="anchor" id="autotoc_md46"></a>
+一些说明</h1>
+<h2><a class="anchor" id="autotoc_md47"></a>
+MINGW</h2>
+<p>看稚晖君知乎文章会发现Clion需要用到MINGW，MINGW实际上的用途应该是编译<code>CMakeLists.txt</code>的生成文件，在VScode未指定编译器的情况下，自动选择MINGW编译，若选择了<code>gcc-arm-none-eabi</code>，在生成前会进行测试并显示错误，此时需在cmake文件的project前添加 <br  />
+ </p><div class="fragment"><div class="line"># Without this flag, CMake is unable to pass the test compilation check</div>
+<div class="line">set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md48"></a>
+多编译器选择</h2>
+<p>当前项目使用的编译器是<code>gcc-arm-none-eabi</code>，但CMake实际上能支持Keil的armcc和armclang编译器，但配置仍需调试。 </p>
+<h3><a class="anchor" id="autotoc_md49"></a>
+问题</h3>
+<p><code>armclang.make</code>在最终armlink时出现<code>Error: L6236E: No section matches selector</code>错误，但<code>startup_stm32f407xx.s</code>已加入并编译。<code>armcc.make</code>没有继续调试，后期有空再看 </p>
+<h3><a class="anchor" id="autotoc_md50"></a>
+可能的解决方案</h3>
+<p>CMake官方项目其实有给出armcc和armclang的配置，可继续尝试 <br  />
+ <img src="image/2023-10-23-23-05-58.png" alt="" class="inline"/> <br  />
+ <a href="https://github.com/Kitware/CMake">CMake官方Github</a></p>
+<h2><a class="anchor" id="autotoc_md51"></a>
+ST调试时检测芯片是否正版</h2>
+<p>若是国产芯片或盗版ST芯片在烧录或调试时会显示<code>Not a genuine St Device! Abort connection</code>，Keil可以通过修改后继续烧录，STM32CubeIDE用网上的方法无法绕过。虽然现在用Clion或VScode，但难保有一天gdb添加了验证功能，留个记录供参考。 已尝试方法：</p><ul>
+<li><a href="https://electronics.stackexchange.com/questions/681952/how-to-make-new-versions-of-stm32cubeide-1-9-to-debug-fake-stm32-chips">修改CPUTAPID</a></li>
+<li><a href="https://www.cnblogs.com/DragonStart/p/12199455.html">外部启动gdbserver</a> <br  />
+</li>
+</ul>
+<p>用IDA进行分析<code>ST-LINK_gdbserver.exe</code>，0x40D6AC函数为判断连接状态，其中0x40D7EC函数返回0x12时为检测到盗版芯片 <br  />
+ <img src="image/2023-10-24-00-27-24.png" alt="" class="inline"/> <br  />
+ 可见Patch一下即可，但STM32CubeIDE还检测单片机的ID，由于gdb是通过socket通信的，可以用wireshark抓包对比一下正版和盗版。 <br  />
+ <img src="image/2023-10-24-00-36-12.png" alt="" class="inline"/> <br  />
+ 结合IDA调试可见有一段类似于验证，通过dll注入修改ws2_32的send函数并修改最终能正常使用。检测是否为验证通信的逻辑有待改善，但此方法可令STM32CubeIDE正常调试 <br  />
+ <a href="https://github.com/JamesHoi/HackSTLinkGDB">HackSTlinkGDB源码</a> <br  />
+ 可参考<a href="https://github.com/armink/HackSTLinkUpgrade">暴力升级ST-Link</a></p>
+<h1><a class="anchor" id="autotoc_md52"></a>
+Doxygen文档配置</h1>
+<p>doxygen是一个出色的生成文档的工具，不但能根据源码注释生成文档，还支持Markdown，下面介绍一下本文档的配置设定。文档文件结构如下 </p><div class="fragment"><div class="line">Docs</div>
+<div class="line">├───chassis # 测试文档文件夹 </div>
+<div class="line">│   └───chassis.md # 测试文档</div>
+<div class="line">├───doxygen # doxygen的配置文件</div>
+<div class="line">│   ├───doxygen-awesome-css # doxygen主题</div>
+<div class="line">│   ├───Doxygen.in # Doxygen配置，CMake根据这个生成</div>
+<div class="line">│   ├───DoxygenLayout.xml.in # Doxygen目录配置</div>
+<div class="line">│   └───...</div>
+<div class="line">├───examples # 文档的范例代码</div>
+<div class="line">│   └───example_main.c # 范例代码</div>
+<div class="line">├───image # Markdown图片文件夹</div>
+<div class="line">├───CMakeLists.txt # CMake配置</div>
+<div class="line">├───mainpage.md # 文档主页</div>
+<div class="line">├───test.md # 测试文档</div>
+<div class="line">└───...</div>
+</div><!-- fragment --><p> doxygen基本支持Markdown的所有功能，甚至可以在Markdown里用doxygen的一些功能，见<a class="el" href="test.html">测试文章</a>，所以推荐使用Markdown编写文档，毕竟方便且可专注于编写文档内容。</p>
+<h2><a class="anchor" id="autotoc_md53"></a>
+文档格式及语法</h2>
+<p>下面给出了一个文档格式例子 </p><div class="fragment"><div class="line"># 标题 {#testpage1}</div>
+<div class="line">[TOC]</div>
+<div class="line"> </div>
+<div class="line">正文1</div>
+<div class="line">\include example_main.c</div>
+<div class="line">[测试文档2](@ref #testpage2)</div>
+<div class="line">正文2</div>
+<div class="line">![image](image/testpage1.png)</div>
+</div><!-- fragment --><ol type="1">
+<li>标题旁的<code>{#testpage1}</code>定义了这个文档的label，别的文档或目录可根据label引用。例如在其他文档用<code>[测试文档1](@ref #testpage1)</code>即可实现跳转到这个文档的链接。 <br  />
+</li>
+<li>其次，<code>\include xxx</code>可实现范例代码的插入，其中范例代码必须放在<code>examples</code>路径下。 <br  />
+</li>
+<li>Markdown图片必须放在<code>image</code>路径内，编写md的时候记得设置一下图片保存路径</li>
+<li><code>[TOC]</code>是生成目录，非常建议开启</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md54"></a>
+CMake配置</h2>
+<p><code>Docs/CMakeLists.txt</code>配置了一些内容 <br  />
+ <code>EMEDDED_DOXY_PROJECT_NAME</code>，<code>EMEDDED_DOXY_PROJECT_NUMBER</code>，<code>EMEDDED_DOXY_PROJECT_BRIEF</code>见下图 <img src="image/2023-10-24-17-23-13.png" alt="" class="inline"/> <br  />
+ <img src="image/2023-10-24-17-23-32.png" alt="" class="inline"/> <br  />
+ <code>EMEDDED_DOC_TREE</code>和<code>EMEDDED_DOC_ENDTREE</code>定义了目录头尾的文档，格式如下 <br  />
+ <img src="image/2023-10-24-17-27-04.png" alt="" class="inline"/> <br  />
+ <code>EMEDDED_DOC_TREE</code>在介绍后插入，<code>EMEDDED_DOC_ENDTREE</code>在文件后插入，详细的见doxygen文档及<code>DoxygenLayout.xml.in</code>文件 <br  />
+ <img src="image/2023-10-24-17-29-25.png" alt="" class="inline"/> <br  />
+ 可用<code>usergroup</code>做到子目录，<code>usergroup</code>也可配置文档 <br  />
+ </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">tab</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;usergroup&quot;</span> <span class="keyword">url</span>=<span class="stringliteral">&quot;@ref group_page&quot;</span> <span class="keyword">title</span>=<span class="stringliteral">&quot;My Group&quot;</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">tab</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;user&quot;</span> <span class="keyword">url</span>=<span class="stringliteral">&quot;@ref test&quot;</span> <span class="keyword">title</span>=<span class="stringliteral">&quot;test&quot;</span>/&gt;</div>
+<div class="line">&lt;/<span class="keywordtype">tab</span>&gt;</div>
+</div><!-- fragment --><p> <code>EMEDDED_DOXY_EXCLUDE_PATTERNS</code>可以让doxygen排除源代码目录，编译目录等 <br  />
+ <img src="image/2023-10-25-02-07-07.png" alt="" class="inline"/></p>
+<h2><a class="anchor" id="autotoc_md55"></a>
+细节</h2>
+<h3><a class="anchor" id="autotoc_md56"></a>
+主题插件</h3>
+<p>插件全上了，详细见<a href="https://jothepro.github.io/doxygen-awesome-css/md_docs_2extensions.html">文档</a>，其中需要修改header.html等doxygen配置，插件配置并未写在cmake中。</p>
+<h3><a class="anchor" id="autotoc_md57"></a>
+版本问题</h3>
+<div class="fragment"><div class="line">[build] warning: The selected output language &quot;chinese&quot; has not been updated</div>
+<div class="line">[build] since release 1.9.4.  As a result some sentences may appear in English.</div>
+</div><!-- fragment --><p> doxygen 1.9.8版本实际上还未完成翻译中文，但大部分已翻译，没翻译的可自行替换，例如topics </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">tab</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;topics&quot;</span> <span class="keyword">visible</span>=<span class="stringliteral">&quot;yes&quot;</span> <span class="keyword">title</span>=<span class="stringliteral">&quot;模块&quot;</span> <span class="keyword">intro</span>=<span class="stringliteral">&quot;这里列出了所有模块:&quot;</span>/&gt;</div>
+</div><!-- fragment --><p> 注：doxygen的<code>module</code>貌似已经意思是c++20的模块特性，<code>topics</code>以前doxygen就翻译为模块。 <br  />
+ 其次，doxygen1.9.8以前的版本Markdown的<code>@ref</code>定向会有点问题 </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">生成于 2023年 十月 25日 星期三 02:35:49 , 为 电控组文档使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>
